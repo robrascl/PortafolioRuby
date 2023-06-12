@@ -3,10 +3,39 @@
 
 <section class="container-fluid">
 
-        <h2 class="display-3 fw-bold pt-5">
+        <h2 class="display-3 fw-bold pt-5 text-center">
             Bootcamp Ruby on Rails - G11
         </h2>
-        <h3  class="my-5">
-            Estos son los tres desafios, "Meet and Coffee" , "Olivia Ros" y "Viajes Chile" que puedes ver en Proyectos.
-        </h3>
+
+        <div class="container">
+            <div class="row text-center">
+
+                <div class="col-md-6 mt-5" > 
+                        <div class="card">
+                            <%# <img src="..." class="card-img-top" alt="..."> %>
+                            <%= video_tag("intro_ROR.mov" , controls: true ) %>
+                            <div class="card-body">
+                                <h5 class="card-title">Acerca RoR</h5>
+                                <p class="card-text"> Ruby on Rails (RoR), también conocido como Rails, es un marco de trabajo de "Fullstack" escrito en el lenguaje de programación Ruby </p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-6 mt-5" >
+                    
+                        <div class="card">
+                            <%# <img src="..." class="card-img-top" alt="..."> %>
+                            <%= video_tag("introROR.mov" , controls: true ) %>
+                            <div class="card-body">
+                                <h5 class="card-title">Acerca RoR</h5>
+                                <p class="card-text"> Ruby on Rails (RoR), también conocido como Rails, es un marco de trabajo de "Fullstack" escrito en el lenguaje de programación Ruby </p>
+                                <%= link_to 'Historia  Ruby on Rails' , 'https://builtin.com/software-engineering-perspectives/ruby-on-rails' , class:"btn btn-primary" , id:"green" %>
+                            </div>
+                        </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        
 </section>
